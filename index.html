@@ -7,6 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 1, 2 -->
+    <button class="button" data-action="open-modal">Відкрити модалку</button> 
+    <div class="backdrop js-backdrop"> 
+      <div class="modal"> 
+        <h2>Modal window</h2> 
+        <p>In user interface design for computer applications, a modal window is a graphical control element 
+            subordinate to an application's main window. It creates a mode that
+             disables the main window but keeps it visible, with the modal window as a 
+            child window in front of it. Users must interact
+             with the modal window before they can return to the parent application.
+              This avoids interrupting the workflow on the main window. Modal windows are sometimes called heavy
+               windows or modal dialogs because they often display a dialog box.</p> 
+        <button type="button" class="button" data-action="close-modal"> 
+          Закрити 
+        </button> 
+      </div> 
+    </div>
+    <!-- 3 -->
+    <form> 
+        <p>Choose a color:</p> 
+        <label> 
+          <input type="radio" name="color" value="red" id="color"/> 
+          Red 
+        </label> 
+        <label> 
+          <input type="radio" name="color" value="white" id="color"/> 
+          White 
+        </label> 
+        <label> 
+          <input type="radio" name="color" value="green" id="color"/> 
+          Green 
+        </label> 
+      </form>
+      <!-- 4 -->
+       <input type="text" id="name-input" placeholder="Your name?">
+       <h2>Hello, <span id="name-output">unknown</span></h2>
+       <!-- 4.1 -->
+       <input type="text" id="validation-input" data-length="6" placeholder="Enter 6 symbols">
     <script src="./script.js"></script>
 </body>
 </html>
